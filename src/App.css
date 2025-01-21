@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 0;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.test-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 2rem;
+}
+
+.test-case {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-case > h2 {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.test-case img,
+.test-case canvas {
+  height: 300px;
+  width: 450px;
+}
