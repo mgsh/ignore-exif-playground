@@ -45,9 +45,9 @@ export const ImageOrientationTest = ({ src }: { src: string }) => {
         </div>
         <div className="test-case">
           <h2>imageOrientation: none</h2>
-          <Stage width={450} height={300} style={{ imageOrientation: "none" }}>
+          <Stage width={450} height={300}>
             <Layer>
-              <KonvaImage image={image} width={450} height={300} />
+              <KonvaImage image={image} width={450} height={300} style={{ imageOrientation: "none" }} />
             </Layer>
           </Stage>
         </div>
