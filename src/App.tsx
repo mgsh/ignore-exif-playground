@@ -13,6 +13,17 @@ function App() {
   const toggleImageSrc = () => {
     setSrc((prev) => (prev === ExifTest3Image ? remoteSrc : ExifTest3Image));
   };
+  
+  const stageRef = useRef(null);
+  
+  // Set CSS background when component mounts
+  useEffect(() => {
+    if (stageRef.current) {
+      // Apply CSS background to stage container
+      const container = stageRef.current.container();
+      container.style.imageOrientation = 'none';
+    }
+  }, []);
 
   return (
     <>
