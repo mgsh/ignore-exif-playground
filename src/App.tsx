@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./App.css";
 import ExifTest3Image from "./assets/exif-test-3.jpg";
 import { ImageOrientationTest } from "./ImageOrientationTest";
